@@ -1,7 +1,7 @@
 <header class="fixed w-full top-4 z-10">
     <div class="container">
         <div
-            class="w-full px-12 flex flex-row items-center justify-between pointer-events-auto col-start-2 -mx-px rounded-2xl py-2.5 shadow-surface-glass backdrop-blur will-change-transform [@supports(backdrop-filter:blur(15px))]:bg-secondary-main/[3%] opacity-100 scale-100 max-laptop:flex-col max-laptop:gap-4 max-laptop:justify-center max-laptop:items-center">
+            class="w-full px-12 flex flex-row items-center justify-between pointer-events-auto col-start-2 -mx-px rounded-2xl py-2.5 shadow-surface-glass backdrop-blur will-change-transform [@supports(backdrop-filter:blur(15px))]:bg-secondary-main/[3%] opacity-100 scale-100 max-laptop:flex-row max-laptop:gap-4 max-laptop:justify-center max-laptop:items-center">
             <a href="/">
                 <svg width="737" height="721" viewBox="0 0 737 721"
                     class="w-16 h-16 fill-primary-main dark:fill-secondary-main" fill="none"
