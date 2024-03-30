@@ -1,4 +1,3 @@
-@section('title', 'Home')
 <div class="flex flex-col justify-center items-center h-full">
     <div class="flex flex-col items-center justify-center relative z-[2]">
         <div>

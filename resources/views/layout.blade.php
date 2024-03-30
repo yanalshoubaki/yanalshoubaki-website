@@ -12,9 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title') - Loqui</title>
+    <title>Yanal Shoubaki</title>
     <meta name="description"
-        content="Loqui: Send messages anonymously. Connect with others while protecting your identity. Simple, secure messaging." />
+        content="Software engineer from jordan." />
     <meta name="robots" content="noindex,nofollow" />
     <meta property="og:image" content="{{ URL::asset('default-image.png') }}" />
     @livewireStyles
