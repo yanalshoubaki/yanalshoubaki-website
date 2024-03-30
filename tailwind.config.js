@@ -64,8 +64,8 @@ export default {
                 },
             },
             backgroundImage: {
-                pattern: "url('https://yanalshoubaki.com/bg-light.svg')",
-                "pattern-dark": "url('https://yanalshoubaki.com/bg-dark.svg')",
+                pattern: "url('https://yanalshoubaki.com/images/bg-light.svg')",
+                "pattern-dark": "url('https://yanalshoubaki.com/images/bg-dark.svg')",
             },
         },
     },
