@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
@@ -6,15 +7,27 @@ import ProjectCard from "./components/project-card";
 import TechStack from "./components/tech-stack";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { useTheme } from "next-themes";
 
 export default function Page() {
+  const { theme } = useTheme();
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center mx-auto">
           <div className="mr-4 flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <Image src="/logo-light.svg" alt="Logo" width={32} height={32} />
+              {theme == "dark" ? (
+                <Image
+                  src="/logo-light.svg"
+                  alt="Logo"
+                  width={32}
+                  height={32}
+                />
+              ) : (
+                <Image src="/logo-dark.svg" alt="Logo" width={32} height={32} />
+              )}
             </Link>
             <nav className="hidden md:flex items-center  space-x-6 text-sm font-medium">
               <Link
