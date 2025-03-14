@@ -12,11 +12,11 @@ export default function Page() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center mx-auto">
-          <div className="mr-4 hidden md:flex">
+          <div className="mr-4 flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Image src="/logo-light.svg" alt="Logo" width={32} height={32} />
             </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+            <nav className="hidden md:flex items-center  space-x-6 text-sm font-medium">
               <Link
                 href="#about"
                 className="transition-colors hover:text-foreground/80"
@@ -79,7 +79,7 @@ export default function Page() {
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://x.com/yanalshoubaki" target="_blank">
+                <Link href="https://x.com/itsyanal" target="_blank">
                   <Button variant="outline" size="icon">
                     <Twitter className="h-4 w-4" />
                     <span className="sr-only">Twitter</span>
