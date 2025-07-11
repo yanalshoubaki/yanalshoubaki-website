@@ -6,7 +6,6 @@ import ContactForm from "./components/contact-form";
 import ProjectCard from "./components/project-card";
 import TechStack from "./components/tech-stack";
 import Image from "next/image";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { useTheme } from "next-themes";
 import { sendGTMEvent } from "@next/third-parties/google";
 
