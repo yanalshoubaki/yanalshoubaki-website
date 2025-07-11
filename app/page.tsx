@@ -78,7 +78,7 @@ export default function Page() {
               </div>
               <div className="ml-auto flex items-center gap-2">
                 <Link
-                  href="https://drive.google.com/file/d/1JXZY0j2oqIqol3ErTkfAAYXc27ZXsT5q/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1G3Ez31UuI2eZATrdJ6oHIFdHXlh063kA/view?usp=sharing"
                   target="_blank"
                   aria-label="Resume"
                   onClick={(e) => {
