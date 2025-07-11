@@ -1,4 +1,5 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +10,8 @@ interface ProjectCardProps {
   image: string;
   link: string;
   tags: string[];
+  linkTitle?: string;
+  linkIcon?: React.ReactNode;
 }
 
 export default function ProjectCard({
@@ -17,6 +20,8 @@ export default function ProjectCard({
   image,
   link,
   tags,
+  linkTitle = "View on GitHub",
+  linkIcon = <Github className="h-4 w-4" />,
 }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden pt-0">
@@ -44,12 +49,19 @@ export default function ProjectCard({
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Link
+          onClick={(e) => {
+            e.stopPropagation();
+            sendGTMEvent({
+              event: "buttonClicked",
+              value: linkTitle,
+            });
+          }}
           href={link}
           target="_blank"
           className="inline-flex items-center gap-2 text-sm hover:underline"
         >
-          <Github className="h-4 w-4" />
-          View on GitHub
+          {linkIcon}
+          {linkTitle}
         </Link>
       </CardFooter>
     </Card>
