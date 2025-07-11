@@ -78,7 +78,6 @@ export default function Page() {
                 </nav>
               </div>
               <div className="ml-auto flex items-center gap-2">
-                <ThemeToggle />
                 <Link
                   href="https://drive.google.com/file/d/1JXZY0j2oqIqol3ErTkfAAYXc27ZXsT5q/view?usp=drive_link"
                   target="_blank"
