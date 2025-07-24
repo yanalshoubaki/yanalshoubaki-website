@@ -6,18 +6,22 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { submitContactForm } from "../actions";
+import { toast } from "sonner";
 
 export default function ContactForm() {
   const [pending, setPending] = useState(false);
-  const [message, setMessage] = useState("");
 
   async function handleSubmit(formData: FormData) {
     setPending(true);
     try {
       const response = await submitContactForm(formData);
-      setMessage(response.message);
+      if (response.error === null) {
+        toast.success("Message sent successfully!");
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
     } catch {
-      setMessage("Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again.");
     } finally {
       setPending(false);
     }
@@ -53,11 +57,6 @@ export default function ContactForm() {
         <Button type="submit" className="w-full" disabled={pending}>
           {pending ? "Sending..." : "Send Message"}
         </Button>
-        {message && (
-          <p className="text-sm text-center mt-4 text-muted-foreground">
-            {message}
-          </p>
-        )}
       </form>
     </Card>
   );
