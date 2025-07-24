@@ -97,11 +97,7 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          disableTransitionOnChange
-        >
+        <ThemeProvider enableColorScheme={false} enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>
