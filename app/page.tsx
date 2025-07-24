@@ -219,6 +219,15 @@ export default function Page() {
                     linkTitle="Visit website"
                     tags={["Laravel", "TailwindCSS", "mysql", "filament"]}
                   />
+                  <ProjectCard
+                    title="Cinema App"
+                    description="A modern cinema application that allows users to browse movies, view details, and manage bookings. Built with a focus on performance and user experience."
+                    image="/projects/cinema/banner.png"
+                    link="https://cinema.yanalshoubaki.com"
+                    linkIcon={<Globe className="size-4" />}
+                    linkTitle="Visit website"
+                    tags={["React.js", "Typescript", "TailwindCSS", "Rest API"]}
+                  />
                 </div>
               </div>
             </section>
