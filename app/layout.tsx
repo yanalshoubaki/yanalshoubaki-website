@@ -11,16 +11,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yanal Shoubaki",
-  description: "Software engineer portfolio showcasing projects and skills",
+  description:
+    "Software engineer — React.js, Next.js, Node.js, NestJS, Laravel. Portfolio and projects.",
   keywords: [
     "Yanal Shoubaki",
     "Software Engineer",
     "Portfolio",
-    "Web Development",
-    "JavaScript",
     "React",
     "Next.js",
     "Node.js",
+    "NestJS",
+    "Laravel",
+    "Web Development",
+    "JavaScript",
     "Software Projects",
   ],
   authors: [
@@ -32,7 +35,8 @@ export const metadata: Metadata = {
   creator: "Yanal Shoubaki",
   openGraph: {
     title: "Yanal Shoubaki",
-    description: "Software engineer portfolio showcasing projects and skills",
+    description:
+      "Software engineer — React.js, Next.js, Node.js, NestJS, Laravel. Portfolio and projects.",
     url: "https://yanalshoubaki.com",
     siteName: "Yanal Shoubaki",
     images: [
@@ -95,7 +99,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          inter.className
+          inter.className,
         )}
       >
         <ThemeProvider enableColorScheme={false} enableSystem={false}>
